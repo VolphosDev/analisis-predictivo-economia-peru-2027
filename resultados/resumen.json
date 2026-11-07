@@ -1,0 +1,181 @@
+{
+  "ultimo_dato": {
+    "pbi": "2026-08",
+    "ipc": "2026-10",
+    "infl_12m": "2026-10",
+    "infl_sae": "2026-10",
+    "tc": "2026-10",
+    "cobre": "2026-10",
+    "oro": "2026-10",
+    "ti": "2026-08",
+    "export": "2026-08",
+    "exp_econ_12m": "2026-10",
+    "exp_pbi_12m": "2026-10",
+    "exp_infl_12m": "2026-10",
+    "tasa_ref": "2026-10",
+    "cemento": "2026-08"
+  },
+  "ultimo_valor": {
+    "pbi": 198.475,
+    "ipc": 121.549,
+    "infl_12m": 5.251,
+    "infl_sae": 4.636,
+    "tc": 3.442,
+    "cobre": 659.182,
+    "oro": 4104.718,
+    "ti": 185.971,
+    "export": 10815.404,
+    "exp_econ_12m": 63.087,
+    "exp_pbi_12m": 3.067,
+    "exp_infl_12m": 3.054,
+    "tasa_ref": 4.25,
+    "cemento": 7.63
+  },
+  "modelos": {
+    "PBI": {
+      "orden": [
+        2,
+        1,
+        0
+      ],
+      "estacional": [
+        0,
+        1,
+        1,
+        12
+      ],
+      "aic": -992.4,
+      "ljungbox_p": 0.78
+    },
+    "IPC": {
+      "orden": [
+        2,
+        1,
+        0
+      ],
+      "estacional": [
+        0,
+        1,
+        1,
+        12
+      ],
+      "aic": -1551.9,
+      "ljungbox_p": 0.097
+    },
+    "cobre": {
+      "orden": [
+        2,
+        1,
+        2
+      ],
+      "estacional": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "aic": -654.1,
+      "ljungbox_p": 0.021
+    },
+    "tc": {
+      "orden": [
+        1,
+        1,
+        0
+      ],
+      "estacional": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "aic": -1162.8,
+      "ljungbox_p": 0.404
+    },
+    "ti": {
+      "orden": [
+        1,
+        1,
+        0
+      ],
+      "estacional": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "aic": -907.9,
+      "ljungbox_p": 0.482
+    },
+    "exp_econ_12m": {
+      "orden": [
+        1,
+        1,
+        0
+      ],
+      "estacional": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "aic": -501.4,
+      "ljungbox_p": 0.039
+    }
+  },
+  "probabilidades": {
+    "h1_central": 3.01,
+    "h1_media": 3.065,
+    "h1_p10": 0.584,
+    "h1_p90": 5.567,
+    "p_h1_mayor_2": 0.703,
+    "p_h1_mayor_3": 0.515,
+    "p_h1_mayor_34": 0.432,
+    "p_infl_jun_rango": 0.147,
+    "p_infl_jun_menor_4": 0.42,
+    "p_infl_ene_rango": 0.0,
+    "mensual_para_3": 0.24,
+    "mensual_modelo": 0.396
+  },
+  "ml_mae": {
+    "Ridge": 2.261,
+    "Bosque aleatorio": 1.55,
+    "Gradient boosting": 1.639,
+    "Persistencia (referencia)": 1.485
+  },
+  "ml_pred_h1": {
+    "Ridge": 4.634,
+    "Bosque aleatorio": 3.437,
+    "Gradient boosting": 4.663
+  },
+  "ml_mejor": "Bosque aleatorio",
+  "ml_n_validacion": 32,
+  "ols_r2": 0.602,
+  "ols_n": 163,
+  "condiciones": {
+    "cobre": {
+      "prom_h1": 652.007,
+      "jun": 652.214,
+      "li80_jun": 543.341,
+      "ls80_jun": 782.904
+    },
+    "tc": {
+      "prom_h1": 3.459,
+      "jun": 3.459,
+      "li80_jun": 3.275,
+      "ls80_jun": 3.653
+    },
+    "ti": {
+      "prom_h1": 187.55,
+      "jun": 187.55,
+      "li80_jun": 167.942,
+      "ls80_jun": 209.447
+    },
+    "exp_econ_12m": {
+      "prom_h1": 63.562,
+      "jun": 63.562,
+      "li80_jun": 51.527,
+      "ls80_jun": 78.407
+    }
+  }
+}
